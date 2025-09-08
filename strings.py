@@ -48,13 +48,15 @@ print(element.find("o"))
 print(element.replace("python", "java"))
 # in indicates whether it is present or not in the string
 print("course" in element)
+# we have not in also where we are checking for absent
+print("Java" not in element)
 # like concat with each charecter space element space next charector in jion continue
 print(element.join("12345"))
 # starting index it will print where ever it find if not ValueError
 print(element.index("o"))
 # length of an string
 print(len(element))
-#count the occurence of the string
+# count the occurence of the string
 print(element.count("o"))     # 2
 print(element.count("o", 0, 6))  # 1 (between index 0–6 only)
 print(element.count("z"))     # 0 (not found)
