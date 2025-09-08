@@ -1,0 +1,76 @@
+To print context in console we use print method in side paranthasis we will use context what we are gonna Display
+print("Welcome to Context")
+print 10 starts without spaces like this ********** in java we will use for loop start index and end index inside we will use print method 
+for (int i = 0; i < 10; i++){
+    System.out.print("*");
+}
+to Acheive this in Python we will use like this
+python("*" * 10) 
+where "*" this represents the context what we need to print
+       * means times(how many times we want to print this
+       10 means 10 time we are saying * -> this context print 10 times
+
+*** to check problems of the code(compile time errors) ctrl + shift + m
+    to open command pallete ctrl + shift + pallete for key board shortcuts blah blah
+
+Variables Declaration in Python and java
+=>Primitive Data Types
+    student_count = 720         :   int studentCount = 720; 
+    rating = 4.98               :   float rating = 4.98f;
+    is_published = True         :   boolean isPublished = true; 
+    course_name = "Python"      :   String courseName = "Python";      
+    
+    in python we dont mention data type like
+
+find length of an String in Python and Java
+
+    length = len(course_name)   :   length = courseName.length();
+
+repeat * for 10 times in Python and Java
+
+    count = "*" * 10            : 2 ways we can do after java 11 before java only one way we can do it by manually loop it 
+                                    ->  StringBuilder count = new StringBuilder(""); (your choice you can take String, StringBuilder or StringBuffer) for my case scenerio i have taken Builder for repetitive assign
+                                        for ( int i = 0; i < 10; i++){count.append("*");}
+                                        
+                                        String count = "*".repeat(10); after version 11 they introduce repeat method in String class
+
+    print(count)                : System.out.print(count);
+
+concat String + integer in Python and Java
+
+    concat = "python" + str(10) :   String concat = "Java" + 10
+    concat = f"python{10}"
+
+    print("python" + str(10))   :   System.out.print("Java" + 10);
+    print(f"python{10}")
+    print("Python",10)
+
+concat Integer + Integer String + integer in Python and Java
+    print(10+12,"Python",24)    : System.out.print(10+12+"Python"+24);
+
+
+###   STRINGS
+
+element = "Python Programming"
+
+print first element Python and Java
+
+    print(element[0])       : System.out.print(element.charAt(0));
+
+print Last element Python and Java
+
+    print(element[-1])       : System.out.print(element.charAt(element.length()-1));
+
+print substring 0 to 6 Python and Java
+
+    print(element[0:6])       : System.out.print(element.substring(0,6));
+    print(element[:6])
+
+print substring from 0 to last index Python and Java
+
+    print(element[0:])        : System.out.print(element.substring(0));  
+
+copy of original String Python and Java
+
+    print(element[:])         : System.out.print(element.substring(0)); internally this will do same thing 
+     
