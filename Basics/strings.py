@@ -48,7 +48,7 @@ print(element.find("o"))
 print(element.replace("python", "java"))
 # in indicates whether it is present or not in the string
 print("course" in element)
-# we have not in also where we are checking for absent
+# we have "not in" also where we are checking for absent
 print("Java" not in element)
 # like concat with each charecter space element space next charector in jion continue
 print(element.join("12345"))
