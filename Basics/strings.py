@@ -60,3 +60,4 @@ print(len(element))
 print(element.count("o"))     # 2
 print(element.count("o", 0, 6))  # 1 (between index 0–6 only)
 print(element.count("z"))     # 0 (not found)
+
