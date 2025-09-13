@@ -173,3 +173,31 @@ print(list_of_numbers)
 list_of_numbers.extend([1, 5, 7, 8, 9, 2])
 del list_of_numbers[:]
 print(list_of_numbers)
+
+
+#   TUPLE -> tuple is an immutable data so we cannot modify add remove data
+#   but we have some methods that we use like count number of occurence of an number
+#   index   by using this we can get the index of an perticular value
+#   and build in functions like len sum min max slicing(note it wont change data instead it will create new object) in not for conditional statements
+
+tuple = [1, 5, 8, 5, 12, 5, 17]
+#   tuple.count(5)
+count = tuple.count(5)
+print(
+    f"we will get the occurence of 5 in the tuple {count} and tuple is {tuple}")
+
+#   tuple.index(12) and using condition statement if for not getting valueError note if we have multipe values we will get first occurence one
+print(f"index of value of {tuple.index(12)}") if 12 in tuple else print(
+    "12 value is not present in the tuple")
+
+#   NOTE :: min max sum will work only if we have same type of data for all elements present in the object and those data types are int float
+minimum = min(tuple)
+maximum = max(tuple)
+addition = sum(tuple)
+length = len(tuple)
+substring = tuple[0:3]
+print(
+    f"sum of values in the tuple {addition} \nmin value int the tuple is {minimum} \nmax value in the tuple is {maximum} \nlength of the tuple is {length} \nSsubstring from the startindex of 0 to end index of 3 in the tuple is {substring}")
+
+
+#   SET
