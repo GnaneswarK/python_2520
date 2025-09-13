@@ -32,3 +32,8 @@ lastName = input("lastname : ")
 print_fullname_with_args(firstName, lastName)
 fullName = get_fullname_with_args(firstName, lastName)
 print(f"Full name is {fullName}")
+
+# if we try to print the function which is having no return type then what we will get??
+# so here it will says None and + its not performing the function also
+print(print_natural_numbers())
+# if you do like this in Java you will get compile time error
