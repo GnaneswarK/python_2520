@@ -6,16 +6,16 @@
 #   if you want to decale an list then use square brackets like this []
 
 
-# list = [10, 30, 50, 70, 100]
-# print(list)
-# print(f"displaying the first element in the list {list[0]}")
-# list[0] = input("Enter the value to update the first element > ")
-# print(f"updated first element in the list {list[0]}")
-# print(list)
-# print(f"before changing whole object memory address {id(list)}")
-# list = [2, 3, 4, 5]
-# print(f"change whole object of the list {list}")
-# print(f"after changing whole object memory address {id(list)}")
+list = [10, 30, 50, 70, 100]
+print(list)
+print(f"displaying the first element in the list {list[0]}")
+list[0] = input("Enter the value to update the first element > ")
+print(f"updated first element in the list {list[0]}")
+print(list)
+print(f"before changing whole object memory address {id(list)}")
+list = [2, 3, 4, 5]
+print(f"change whole object of the list {list}")
+print(f"after changing whole object memory address {id(list)}")
 
 
 #   tuple is immutale by nature one value assigned in the tupple you cant change it
