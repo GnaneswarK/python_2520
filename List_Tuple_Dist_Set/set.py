@@ -119,3 +119,17 @@ print(set1.issuperset(set2))
 print(set1.isdisjoint(set2))
 # TRUE both set2 and set3 doesnt have common elements
 print(set2.isdisjoint(set3))
+
+
+#   As we know in set we cannot add duplicates and also mutable data tupes like list set dict
+#   in python we know we have an buid-in class called set
+#   by using this we can convert list to set
+#   here we are taking 2 scenerios of list in list1 we have all immutable data and no muttable data
+#   where as in list 2 we have combination of mutable data and immutable data
+list1 = [2, "str", 3.17, True, (5, 6, 7)]
+list2 = [1, False, ("str", True, 5.69), list1, {29, 52}]
+del set
+# true it will create my_set because in list we have all are immutable data
+my_set = set(list1)
+# false it wont create an set and throws an error unhashable type: 'list' because of list is mutable data
+# my_set = set(list2)

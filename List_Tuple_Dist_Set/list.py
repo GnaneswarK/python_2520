@@ -63,6 +63,7 @@ print(
 list_of_numbers.sort()
 print(f"list after ascending order {list_of_numbers}")
 
+
 # shallow copy
 shallow_copy_of_the_list = list_of_numbers.copy()
 print(f"shadow copy of the list {shallow_copy_of_the_list}")
@@ -86,6 +87,7 @@ print(f"{list} & {shallow_copy}")
 list[0] = 250
 print(f"{list} & {shallow_copy}")
 # if you want deep copy where reference also should create new object then import copy use this method inside the copy => copy.deepcopy(list) which retrun deepcopy list
+
 
 #   count method returns the count of the value occurence
 count = list_of_numbers.count(119)
@@ -136,8 +138,28 @@ list_of_numbers.extend([1, 5, 7, 8, 9, 2])
 del list_of_numbers[:]
 print(list_of_numbers)
 
+# NORMAL ASSIGNMENT
+#   Where list and new list sharing same memory address if one list changes data then 2nd list data also modifies
+#   We have three types of
+#   copy NO COPY(=) assignment
+#   SHALLOW COPY(list.copy() or copy.copy()) outer list copied, inner references shared
+#   DEEP COPY(copy.deepcopy()) everything copied, full independence
+#   to use copy we need to import copy module like this import copy
+list = [1, 2, 3, [4, 5, 6], 7, 8, 9]
+new_list = list
+new_list[2] = 27
+new_list[3].append(35)
+print(new_list)
+print(list)
 
-#   TUPLE -> tuple is an immutable data so we cannot modify add remove data
-#   but we have some methods that we use like count number of occurence of an number
-#   index   by using this we can get the index of an perticular value
-#   and build in functions like len sum min max slicing(note it wont change data instead it will create new object) in not for conditional statements
+
+#   If we have tuple we want to update it but we cant due to its immutable nature but we can convert tuple to list 
+#   then we will get new list with in this we can modify data
+tuple = (1,2,9,7)
+#my_list = list(tuple)   #TypeError: 'list' object is not callable
+#   because we already declared list list = [1, 2, 3, [4, 5, 6], 7, 8, 9] its overriding the build in functions 😬😬
+#   so never ever dare to give object reference an list tuple set dict str int float bool etc....
+#   see here i used a lot with list now i can remane it but it take time for i can use build in function del to delete my list
+del list    #   by doing this it will delete my list so that next time i use it will take bild-in list 
+my_list = list(tuple)
+print(my_list)
