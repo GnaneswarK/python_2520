@@ -131,3 +131,23 @@ print(student_details.items())
 # to clear all keys and values we will use clear() method
 student_details.clear()
 print(student_details.items())
+
+
+my_dict = {"clgid":720,"fname":"Gnaneswar","lname":"Korakuti","fullname":"Gnaneswar Korakuti","mobileno":9876543210,}
+
+#   getting items form dict using various ways from for loop
+for key in my_dict:
+    print(key,end=" ")
+print("")
+
+for key in my_dict.keys():
+    print(key,end=" ")
+print("")
+
+for value in my_dict.values():
+    print(value,end=" ")
+print("")
+
+for key,value in my_dict.items():
+    print(f"{key} : {value}, ",end=" ")
+print("")
