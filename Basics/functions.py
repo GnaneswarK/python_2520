@@ -1,3 +1,5 @@
+from datetime import datetime
+
 # def is for defining functions
 # there are 2 TYPES OF FUNCTIONS
 #       PERFORM A TASK FUNCTION
@@ -117,3 +119,11 @@ def alpha1(num1=27, *num2, num3=5, num4):
 # def alpha1(num1, *num2=3):
 #     return True  # InVALID  "num2" is not accessed
 #   SyntaxError: var-positional argument cannot have default value
+
+
+#TO DISPLAY CURRENT DATA AND TIME WE NEED TO import datetime
+# if we use like this from datetime import datetime we are assigning datetime tot datetime
+def display_today_date_and_time():
+    return datetime.now()
+
+print(display_today_date_and_time())
