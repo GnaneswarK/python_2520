@@ -1,0 +1,41 @@
+#   How class looks like in Python
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} is barking!")
+
+d = Dog("Tommy")
+d.bark()
+
+To declare class we need to use an keyword called class and followed by classname 
+class Dog:  # in Java class Dog{}
+
+__init__ this method is for constructor declaration
+if you have variables present in the class then by using __init__ method with in the arguments we pass variables
+by using self we will declare variable at class level it can be accessed by all method and that method must and should have self
+
+#   variables and constructor declaration in Java
+String name;
+public Dog(String name){
+this.name = name;
+}
+#   similary in Python
+def __init__(self, name):
+    self.name = name;
+
+In Java we have 3 keyword public private protected
+similary in python also we have these 3 keywords
+by default if we dont mention anything then it is public
+if we use one time underscore then it is protected 
+if we use 2 times underscore then it is private
+#   now we will see how to declare public private protected variables
+
+def __init__(self,id,name,age):
+    self.__id = id      #   private
+    self.name = name    #   public
+    self._age = age     #   protected
+
+Like this we will create private public protected keywords similary same for methods also
